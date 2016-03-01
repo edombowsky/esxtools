@@ -1,5 +1,13 @@
+.DS_Store
 *.class
 *.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+bin/
 
 # sbt specific
 .cache
@@ -15,3 +23,14 @@ project/plugins/project/
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
+
+# Eclipse conf file
+.settings
+.classpath
+.project
+.manager
+.scala_dependencies
+
+# IntelliJ files
+.idea/
+*.iml
