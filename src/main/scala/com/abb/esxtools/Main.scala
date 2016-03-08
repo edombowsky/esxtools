@@ -446,8 +446,8 @@ object Main extends LazyLogging {
     try {
       if (esxToolsVm.vm.getRuntime.getPowerState != VirtualMachinePowerState.poweredOff) {
         try {
-          if (esxToolsVm.vm.powerOnVM_Task(null).waitForTask == Task.SUCCESS) {
-            logger.info(s"${vmName} was powered on")
+          if (esxToolsVm.vm.powerOffVM_Task.waitForTask == Task.SUCCESS) {
+            logger.info(s"${vmName} was powered off")
             VmUtilities.Success
           } else {
             logger.error(s"Failed to power down vm: ${vmName}")
