@@ -450,7 +450,7 @@ object Main extends LazyLogging {
             logger.info(s"${vmName} was powered on")
             VmUtilities.Success
           } else {
-            logger.error(s"Failed to power on vm: ${vmName}")
+            logger.error(s"Failed to power down vm: ${vmName}")
             VmUtilities.Failure
           }
         } catch {
