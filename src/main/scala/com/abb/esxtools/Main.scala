@@ -184,13 +184,12 @@ object Main extends LazyLogging {
   }
 
   /** 
-    * Parse the command line and perform the speciied doAction
+    * Parse the command line and perform the specified doAction
     *
     * @param args  the command line arguments
     * @return 0 for success, positive non-zero for failure
     */
   def doAction(args: Array[String]): Int = {
-
     
     parser.parse(args, EsxToolsConfig()) match {
       case Some(config) =>
