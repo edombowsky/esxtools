@@ -91,7 +91,7 @@ case class EsxToolsVm(config: EsxToolsConfig) extends LazyLogging {
 }
 
 
-object Main extends LazyLogging {
+object EsxTools extends LazyLogging {
 
   val parser = new scopt.OptionParser[EsxToolsConfig]("EsxTools") {
     // head("EsxTools", "1.x")
