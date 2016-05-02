@@ -14,7 +14,7 @@ resolvers += Resolver.bintrayRepo("pathikrit", "maven")
  
 libraryDependencies ++= Seq(
   "org.scalatest"              %% "scalatest"        % "2.2.4"    % "test",
-  "com.github.pathikrit"       %% "better-files"     % "2.4.1",
+  "com.github.pathikrit"       %% "better-files"     % "2.15.0",
   "com.typesafe.scala-logging" %% "scala-logging"    % "3.1.0",
   "com.github.scopt"           %% "scopt"            % "3.4.0",
   "com.lihaoyi"                %% "pprint"           % "0.3.8",
